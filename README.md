@@ -23,7 +23,6 @@ vi /etc/ssh/sshd_config
 ``` ini
 [Unit]
 Description=Vlmcsd Service
-ConditionPathExists=/usr/local/bin/vlmcsd
 
 [Service]
 ExecStart=/usr/local/bin/vlmcsd -D
@@ -47,7 +46,7 @@ systemctl start vlmcsd.service
 
 ``` JSON
 {
-  "server":"*server_ip*",
+  "server":"0.0.0.0",
   "local_address":"127.0.0.1",
   "local_port":1080,
   "port_password":{
@@ -65,7 +64,6 @@ systemctl start vlmcsd.service
 ``` ini
 [Unit]
 Description=Shadowsock Server Service
-ConditionPathExists=/usr/local/bin/ssserver
 ConditionPathExists=/etc/shadowsocks.json
 
 [Service]
