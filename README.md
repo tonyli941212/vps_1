@@ -41,8 +41,9 @@ systemctl start vlmcsd.service
 
 ## [shadowsocks](https://github.com/shadowsocks/shadowsocks)
 
-1. ```pip install shadowsocks```
-2. Create ```shadowsocks.json``` in ```/etc/```, like this:
+1. Install ```python-pip```
+2. ```pip install shadowsocks```
+3. Create ```shadowsocks.json``` in ```/etc/```, like this:
 
 ``` JSON
 {
@@ -59,7 +60,7 @@ systemctl start vlmcsd.service
 }
 ```
 
-3. Create ```ssserver.service```, like this:
+4. Create ```ssserver.service```, like this:
 
 ``` ini
 [Unit]
