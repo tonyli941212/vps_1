@@ -81,3 +81,5 @@ cp ssserver.service /etc/systemd/system/
 systemctl enable ssserver.service
 systemctl start ssserver.service
 ```
+
+5. ```rc.local```: [Install And Use Shadowsocks Command Line Client on Linux - LinuxBabe](https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-shadowsocks-command-line-client)
