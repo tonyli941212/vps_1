@@ -32,6 +32,15 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
+In particular, if you want to check logs from the vlmcsd service:
+
+``` ini
+...
+[Service]
+ExecStart=/usr/local/bin/vlmcsd -D -e
+...
+```
+
 ``` Bash shell
 cp vlmcsd.service /etc/systemd/system/
 
