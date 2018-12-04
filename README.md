@@ -91,4 +91,15 @@ systemctl enable ssserver.service
 systemctl start ssserver.service
 ```
 
-5. ```rc.local```: [Install And Use Shadowsocks Command Line Client on Linux - LinuxBabe](https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-shadowsocks-command-line-client)
+5. ```AttributeError: */libcrypto.so.1.1: undefined symbol: EVP_CIPHER_CTX_cleanup```
+
+Modfiy ```*/shadowsocks/crypto/openssl.py``` by vim:
+
+```
+:%s/cleanup/reset/
+:x
+```
+
+https://kionf.com/2016/12/15/errornote-ss/
+
+6. ```rc.local```: [Install And Use Shadowsocks Command Line Client on Linux - LinuxBabe](https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-shadowsocks-command-line-client)
