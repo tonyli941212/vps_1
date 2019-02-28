@@ -56,7 +56,7 @@ systemctl start vlmcsd.service
 
 ``` JSON
 {
-  "server":"0.0.0.0",
+  "server":["[::0]", "0.0.0.0"],
   "local_address":"127.0.0.1",
   "local_port":1080,
   "port_password":{
