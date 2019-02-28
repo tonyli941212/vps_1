@@ -42,7 +42,7 @@ ExecStart=/usr/local/bin/vlmcsd -D -e
 ```
 
 ``` Bash shell
-cp vlmcsd.service /etc/systemd/system/
+ln vlmcsd.service /etc/systemd/system/vlmcsd.service
 
 systemctl enable vlmcsd.service
 systemctl start vlmcsd.service
@@ -85,7 +85,7 @@ WantedBy=multi-user.target
 ```
 
 ``` Bash shell
-cp ssserver.service /etc/systemd/system/
+ln ssserver.service /etc/systemd/system/ssserver.service
 
 systemctl enable ssserver.service
 systemctl start ssserver.service
